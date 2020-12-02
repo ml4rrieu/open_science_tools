@@ -3,8 +3,21 @@
 Produce journal tables to know if a journal publication has recquired Article Processing charges (APC)
 
 
+# Sources
 
-## openapc_journals.csv
+the folder `sources` mus contains two files : 
+
+**doaj_journals.csv**
+DPAJ dump at  doaj.org/csv
+(see also this [public-data-dump/](https://doaj.org/docs/public-data-dump/)
+
+**openapc.csv**
+openapc dump
+[github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv](https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv)
+
+
+# produced files
+**openapc_journals.csv**
 
 desciption
 
@@ -16,7 +29,7 @@ columns
 
 
 
-## doaj_apc_journals.csv
+**doaj_apc_journals.csv**
 
 description
 
@@ -28,7 +41,7 @@ columns
 
 
 
-## openapc_dois.csv
+**openapc_dois.csv**
 
 description
 
