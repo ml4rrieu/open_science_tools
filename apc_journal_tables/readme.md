@@ -52,3 +52,9 @@ columns
 `doi, apc_amount_euros, institution`
 
 
+
+# see also
+
+this repo contains some data on APC price evolutions
+
+https://github.com/lmatthia/publisher-oa-portfolios/
