@@ -6,7 +6,7 @@ Produce journal tables to know if a journal publication has recquired Article Pr
 output tables
 ---------------
 
-## openapc_journals.csv
+**openapc_journals.csv**
 
 desciption
 
@@ -17,7 +17,7 @@ columns
 journal_fill_title, 2015, 2016, 2017, 2018, 2019, 2020, issn_print, issn_electronic
 
 
-## doaj_apc_journals.csv
+**doaj_apc_journals.csv**
 
 description
 
@@ -28,7 +28,7 @@ columns
 Journal title, Journal ISSN (print version), Journal EISSN (online version),	APC amount	Currency
 
 
-## openapc_dois.csv
+**openapc_dois.csv**
 
 description
 
