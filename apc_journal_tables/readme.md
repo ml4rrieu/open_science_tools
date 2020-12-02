@@ -3,14 +3,14 @@
 Produce journal tables to know if a journal publication has recquired Article Processing charges (APC)
 
 
-# Source
+# sources used
 
 the folder `source` must contain two files : 
 
 **doaj_journals.csv**
 
 DOAJ dump at  doaj.org/csv
-(see also this [public-data-dump/](https://doaj.org/docs/public-data-dump/)
+(see also this [public-data-dump/](https://doaj.org/docs/public-data-dump/) )
 
 **openapc.csv**
 
