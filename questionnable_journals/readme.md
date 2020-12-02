@@ -15,6 +15,7 @@ a list of print and electronic issn that is present in the previous list
 `suspiciousIssns.json`
 
 
+<br />
 
 **How ?**
 
@@ -25,12 +26,14 @@ and aureHal API `http://api.archives-ouvertes.fr/ref/journal/?q=title_t:`
 and our eyes when it is necessary
 
 
+<br />
 
 **when ?**
 
 this has been done in 2020-05
 
 
+<br />
 
 **disclaimer**
 
