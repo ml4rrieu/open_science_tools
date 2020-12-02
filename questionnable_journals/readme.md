@@ -21,21 +21,21 @@ a list of print and electronic issn that is present in the previous list
 
 let's use Crossref API `http://api.crossref.org/journals?query= `
 
-and aureHal API `http://api.archives-ouvertes.fr/ref/journal/?q=title_t:` 
+and HAL API `http://api.archives-ouvertes.fr/ref/journal/?q=title_t:` 
 
 and our eyes when it is necessary
 
 
 <br />
 
-**when ?**
+**When ?**
 
 this has been done in 2020-05
 
 
 <br />
 
-**disclaimer**
+**Disclaimer**
 
 I am not responsible of the *stop predatory journal list* 
 
