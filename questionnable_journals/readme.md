@@ -6,7 +6,7 @@ stop predatory journal
 
 https://github.com/stop-predatory-journals/stop-predatory-journals.github.io/blob/master/_data/journals.csv
 
-
+<br />
 
 **Output**
 
@@ -33,6 +33,7 @@ this has been done in 2020-05
 
 
 **disclaimer**
+
 I am not responsible of the *stop predatory journal list* 
 
 Since 2017 *stop predatory journal list* is no longer maintained
