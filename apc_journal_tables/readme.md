@@ -1,17 +1,16 @@
 # Goal
 
-Produce journal tables to know if a journal publication has recquired Article Processing charges (APC)
+Produce journal tables to know if an article journal has recquired Article Processing charges (APC)
 
 
 # Sources used
 
-the folder `source` must contain two files : 
+the folder `source` must contains two files : 
 
 **doaj_journals.csv**
 
-DOAJ dump at  doaj.org/csv
+DOAJ dump at doaj.org/csv
 (see also this [public-data-dump/](https://doaj.org/docs/public-data-dump/) )
-
 
 
 **openapc.csv**
@@ -20,6 +19,14 @@ openapc dump
 [github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv](https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv)
 
 
+
+# code
+
+`extract_part_of_csv.py` script to have smaller table than the sources
+
+`get_journal_apc_info.py` script to get the mean of APC cost for each year
+
+`is_doaj_jn_inside_openapc.py` curiosity : how many journals from DOAJ are present in OpenAPC
 
 
 # produced files
@@ -36,11 +43,11 @@ columns
 
 **doaj_apc_journals.csv**
 
-a list of APC journals indexed in  DOAJ with APC informations
+A list of APC journals indexed in  DOAJ with APC informations
 
 columns
 
-`Journal title, Journal ISSN (print version), Journal EISSN (online version),	APC amount	Currency`
+`Journal title, Journal ISSN (print version), Journal EISSN (online version),	APC amount, APC currency`
 
 
 

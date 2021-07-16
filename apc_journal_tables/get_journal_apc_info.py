@@ -7,35 +7,33 @@ STEP 2 if apc in 2015 and in 2017 and no value in 2016 then fill 2016 with 2015 
 
 
 #____STEP 1____ get journal APC info from openapc per year
-"""
-df = pd.read_csv("./source/openapc.csv")
-print(f"nb of articles w APC {len(df.index)}")
+# df = pd.read_csv("./source/openapc.csv")
+# print(f"nb of articles w APC {len(df.index)}")
 
-#extract csv per year to visualize data
-#year = 2012
-#snapshot = df[ df["period"] == year]
-#snapshot.to_csv(f"openapc_{year}.csv")
-#print(len(snapshot))
+# #extract csv per year to visualize data
+# #year = 2012
+# #snapshot = df[ df["period"] == year]
+# #snapshot.to_csv(f"openapc_{year}.csv")
+# #print(len(snapshot))
 
-df = df.loc[ df["is_hybrid"] == False]
-issns_l = df["issn_l"].tolist()
-issn_price = dict.fromkeys(issns_l) #remove duplicate
-print(f"nb of non hybrid journals finded\t{len(issn_price)}\n\n")
+# df = df.loc[ df["is_hybrid"] == False]
+# issns_l = df["issn_l"].tolist()
+# issn_price = dict.fromkeys(issns_l) #remove duplicate
+# print(f"nb of non hybrid journals finded\t{len(issn_price)}\n\n")
 
-for i, item in enumerate(issn_price) : 
-	issn_price[item] = []
-	for year in range(2015, 2021):
-		mean = df.loc[ (df["issn_l"] == item) & (df["period"] == year), "euro" ].mean()
-		issn_price[item].append(mean)
+# for i, item in enumerate(issn_price) : 
+# 	issn_price[item] = []
+# 	for year in range(2015, 2021):
+# 		mean = df.loc[ (df["issn_l"] == item) & (df["period"] == year), "euro" ].mean()
+# 		issn_price[item].append(mean)
 	
-	#if i > 20 : break
+# 	#if i > 20 : break
 
-	#print(f"the apc average for this issn {item}  is {mean}€")
+# 	#print(f"the apc average for this issn {item}  is {mean}€")
 
-out = pd.DataFrame.from_dict(issn_price, orient='index')
-out.to_csv("./source/temp_journals_in_openapc.csv") # !!caution!! the issn_l column is the index
-exit()
-"""
+# out = pd.DataFrame.from_dict(issn_price, orient='index')
+# out.to_csv("./source/temp_journals_in_openapc.csv") # !!caution!! the issn_l column is the index
+# exit()
 
 
 #____STEP 2____ fill NA values if appropriate
@@ -61,7 +59,7 @@ for index, val in data.items() :
 	bottom_val, up_val = None, None
 	nan_idx = [year for year in range(2015, 2021) if pd.isna(val[str(year)])]
 
-	#get the first year were value is present
+	#get the first year where value is present
 	for year in range(2015, 2021) :
 		if pd.notna(val[str(year)]) : 
 			bottom_val = year
@@ -84,9 +82,9 @@ for index, val in data.items() :
 				
 	#if index > 20 : break;
 # view piece of data
-"""for index, val in data.items() : 
-	print(index, val)
-	if index > 5 : break"""
+# for index, val in data.items() : 
+# 	print(index, val)
+# 	if index > 5 : break
 
 journals = pd.DataFrame.from_dict(data, orient="index")
 
@@ -105,7 +103,8 @@ journals.to_csv("openapc_journals.csv", index=False)
 
 
 
-
-
-
-#2290
+"""
+2021-07-16 stat : 
+nb of journals	2788
+nb of journals w value in period	2612
+"""
